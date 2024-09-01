@@ -8,5 +8,12 @@ class TestStringCalculator(unittest.TestCase):
     def test_single_number(self):
         self.assertEqual(add("1"), 1)
 
+    def test_two_numbers(self):
+        self.assertEqual(add("1,2"), 3)
+
+    def test_multiple_numbers(self):
+        self.assertEqual(add("1,2,3,4"), 10)
+
+
 if __name__ == "__main__":
     unittest.main()
